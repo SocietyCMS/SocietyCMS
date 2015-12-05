@@ -144,7 +144,7 @@ return [
         SocietyCMS\Providers\EventServiceProvider::class,
         SocietyCMS\Providers\RouteServiceProvider::class,
 
-        //Pingpong\Modules\ModulesServiceProvider::class,
+        Pingpong\Modules\ModulesServiceProvider::class,
     ],
 
     /*
