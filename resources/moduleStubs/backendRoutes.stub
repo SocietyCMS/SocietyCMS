@@ -1,0 +1,5 @@
+<?php
+
+$router->group(['prefix' => '/$LOWER_NAME$'], function () {
+	get('$LOWER_NAME$', ['as' => 'backend::$LOWER_NAME$.$LOWER_NAME$.index', 'uses' => '$STUDLY_NAME$Controller@index']);
+});

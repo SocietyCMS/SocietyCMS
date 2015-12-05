@@ -1,0 +1,3 @@
+<?php
+
+$router->get('$LOWER_NAME$/{uri}', ['uses' => 'PublicController@uri', 'as' => '$LOWER_NAME$']);

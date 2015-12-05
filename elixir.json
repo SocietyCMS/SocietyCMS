@@ -1,0 +1,9 @@
+{
+  "appPath": "modules",
+  "css": {
+    "outputFolder": "themes"
+  },
+  "js": {
+    "outputFolder": "themes"
+  }
+}
