@@ -4,9 +4,166 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7d84aa61930446d6e5e8d942f30da876",
-    "content-hash": "a9b368fe3e8e92466d47ff831f71f634",
+    "hash": "437f0976b1874c9e7ffaffd031de9781",
+    "content-hash": "ce93dcfa6c6127c85d8eab0867086bec",
     "packages": [
+        {
+            "name": "cartalyst/sentinel",
+            "version": "v2.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cartalyst/sentinel.git",
+                "reference": "b0b6445a7b6af5938396e2ccf8185f4b6dd41526"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cartalyst/sentinel/zipball/b0b6445a7b6af5938396e2ccf8185f4b6dd41526",
+                "reference": "b0b6445a7b6af5938396e2ccf8185f4b6dd41526",
+                "shasum": ""
+            },
+            "require": {
+                "cartalyst/support": "~1.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/cookie": "~5.0",
+                "illuminate/database": "~5.0",
+                "illuminate/http": "~5.0",
+                "illuminate/session": "~5.0",
+                "ircmaxell/password-compat": "~1.0",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "illuminate/database": "By default, Sentinel utilizes the powerful Illuminate database layer.",
+                "illuminate/events": "To hook into various events across Sentinel, we recommend using Illuminate's event dispatcher.",
+                "ircmaxell/password-compat": "Default hashing uses PHP 5.5 password_* functions, with forward-compatible support.",
+                "symfony/http-foundation": "Required for native implementations."
+            },
+            "type": "library",
+            "extra": {
+                "component": "package",
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cartalyst\\Sentinel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Corlett",
+                    "email": "ben.corlett@cartalyst.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Cartalyst LLC",
+                    "email": "help@cartalyst.com"
+                },
+                {
+                    "name": "Bruno Gaspar",
+                    "email": "bruno.gaspar@cartalyst.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dan Syme",
+                    "email": "dan.syme@cartalyst.com",
+                    "role": "Creator & Designer"
+                },
+                {
+                    "name": "Suhayb Wardany",
+                    "email": "su.wardany@cartalyst.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP 5.4+ Fully-featured Authentication & Authorization System",
+            "keywords": [
+                "auth",
+                "cartalyst",
+                "codeigniter",
+                "fuelphp",
+                "laravel",
+                "php",
+                "security"
+            ],
+            "time": "2015-11-26 00:03:11"
+        },
+        {
+            "name": "cartalyst/support",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cartalyst/support.git",
+                "reference": "c90931d25e89734ba89875a769af6b2e050593a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cartalyst/support/zipball/c90931d25e89734ba89875a769af6b2e050593a5",
+                "reference": "c90931d25e89734ba89875a769af6b2e050593a5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/mail": "~4.1|~5.0",
+                "illuminate/validation": "~4.1|~5.0",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "component": "package",
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cartalyst\\Support\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Cartalyst LLC",
+                    "email": "help@cartalyst.com"
+                },
+                {
+                    "name": "Bruno Gaspar",
+                    "email": "bruno.gaspar@cartalyst.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dan Syme",
+                    "email": "dan.syme@cartalyst.com",
+                    "role": "Project Lead"
+                },
+                {
+                    "name": "Suhayb Wardany",
+                    "email": "su.wardany@cartalyst.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Support helpers.",
+            "keywords": [
+                "cartalyst",
+                "helper",
+                "laravel",
+                "support"
+            ],
+            "time": "2015-06-24 13:00:53"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "3.0.0",
@@ -116,6 +273,136 @@
                 "utils"
             ],
             "time": "2015-07-23 00:54:12"
+        },
+        {
+            "name": "dingo/api",
+            "version": "v0.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dingo/api.git",
+                "reference": "fbd4b1f226738ede5cb0934e10dc12b24d787bc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dingo/api/zipball/fbd4b1f226738ede5cb0934e10dc12b24d787bc6",
+                "reference": "fbd4b1f226738ede5cb0934e10dc12b24d787bc6",
+                "shasum": ""
+            },
+            "require": {
+                "dingo/blueprint": "0.1.*",
+                "doctrine/annotations": "1.2.*",
+                "illuminate/routing": "5.1.*",
+                "illuminate/support": "5.1.*",
+                "league/fractal": "0.12.*",
+                "php": ">=5.5.9",
+                "phpdocumentor/reflection-docblock": "2.0.*"
+            },
+            "require-dev": {
+                "illuminate/auth": "5.1.*",
+                "illuminate/cache": "5.1.*",
+                "illuminate/console": "5.1.*",
+                "illuminate/database": "5.1.*",
+                "illuminate/events": "5.1.*",
+                "illuminate/filesystem": "5.1.*",
+                "illuminate/pagination": "5.1.*",
+                "laravel/lumen-framework": "5.1.*",
+                "lucadegasperi/oauth2-server-laravel": "4.1.*",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~2.0",
+                "tymon/jwt-auth": "0.5.*"
+            },
+            "suggest": {
+                "lucadegasperi/oauth2-server-laravel": "Protect your API with OAuth 2.0.",
+                "tymon/jwt-auth": "Protect your API with JSON Web Tokens"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.10-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dingo\\Api\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jason Lewis",
+                    "email": "jason.lewis1991@gmail.com"
+                }
+            ],
+            "description": "A RESTful API package for the Laravel and Lumen frameworks.",
+            "keywords": [
+                "api",
+                "dingo",
+                "laravel",
+                "restful"
+            ],
+            "time": "2015-08-05 03:30:33"
+        },
+        {
+            "name": "dingo/blueprint",
+            "version": "v0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dingo/blueprint.git",
+                "reference": "6e32139779a68b94bba9481e0d3880b9e710a22b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dingo/blueprint/zipball/6e32139779a68b94bba9481e0d3880b9e710a22b",
+                "reference": "6e32139779a68b94bba9481e0d3880b9e710a22b",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/annotations": "1.2.*",
+                "illuminate/support": "5.1.*",
+                "php": ">=5.5.9",
+                "phpdocumentor/reflection-docblock": "2.0.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dingo\\Blueprint\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jason Lewis",
+                    "email": "jason.lewis1991@gmail.com"
+                }
+            ],
+            "description": "API Blueprint documentation generator.",
+            "keywords": [
+                "api",
+                "blueprint",
+                "dingo",
+                "docs",
+                "laravel"
+            ],
+            "time": "2015-08-22 03:01:02"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -703,6 +990,51 @@
             "time": "2015-11-01 10:19:22"
         },
         {
+            "name": "floatingpoint/stylist",
+            "version": "0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/floatingpointsoftware/stylist.git",
+                "reference": "1e550b9e858e1b5c1b8d4aa0b448bf114471c570"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/floatingpointsoftware/stylist/zipball/1e550b9e858e1b5c1b8d4aa0b448bf114471c570",
+                "reference": "1e550b9e858e1b5c1b8d4aa0b448bf114471c570",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "laravelcollective/html": "~5.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master@dev",
+                "orchestra/testbench": "3.0.*",
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FloatingPoint\\Stylist\\": "src/Stylist",
+                    "Tests\\": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Kirk Bushell",
+                    "email": "torm3nt@gmail.com"
+                },
+                {
+                    "name": "Mike Dugan",
+                    "email": "mike@mjdugan.com"
+                }
+            ],
+            "description": "Laravel 5 theming package.",
+            "time": "2015-10-05 17:21:46"
+        },
+        {
             "name": "jakub-onderka/php-console-color",
             "version": "0.1",
             "source": {
@@ -846,6 +1178,95 @@
                 "tokenizer"
             ],
             "time": "2015-12-05 17:17:57"
+        },
+        {
+            "name": "laracasts/flash",
+            "version": "1.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laracasts/flash.git",
+                "reference": "a2e237ae34fcc73c4b0755fe51d1ac2063be781e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laracasts/flash/zipball/a2e237ae34fcc73c4b0755fe51d1ac2063be781e",
+                "reference": "a2e237ae34fcc73c4b0755fe51d1ac2063be781e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Laracasts\\Flash": "src/"
+                },
+                "files": [
+                    "src/Laracasts/Flash/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeffrey Way",
+                    "email": "jeffrey@laracasts.com"
+                }
+            ],
+            "description": "Easy flash notifications",
+            "time": "2015-02-01 20:07:15"
+        },
+        {
+            "name": "laracasts/presenter",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laracasts/Presenter.git",
+                "reference": "b284f3137f990efd6e95df49d254f1ccc4541e92"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laracasts/Presenter/zipball/b284f3137f990efd6e95df49d254f1ccc4541e92",
+                "reference": "b284f3137f990efd6e95df49d254f1ccc4541e92",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpspec/phpspec": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Laracasts\\Presenter": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeffrey Way",
+                    "email": "jeffrey@laracasts.com"
+                }
+            ],
+            "description": "Simple view presenters",
+            "keywords": [
+                "laravel",
+                "presenter",
+                "view"
+            ],
+            "time": "2014-09-13 13:18:07"
         },
         {
             "name": "laravel/framework",
@@ -1111,6 +1532,121 @@
             "time": "2015-09-30 22:26:59"
         },
         {
+            "name": "league/fractal",
+            "version": "0.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/fractal.git",
+                "reference": "0a51dcb6398dc2377d086210d0624996a1df8322"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/fractal/zipball/0a51dcb6398dc2377d086210d0624996a1df8322",
+                "reference": "0a51dcb6398dc2377d086210d0624996a1df8322",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "illuminate/contracts": "~5.0",
+                "mockery/mockery": "~0.9",
+                "pagerfanta/pagerfanta": "~1.0.0",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5",
+                "zendframework/zend-paginator": "~2.3"
+            },
+            "suggest": {
+                "illuminate/pagination": "The Illuminate Pagination component.",
+                "pagerfanta/pagerfanta": "Pagerfanta Paginator",
+                "zendframework/zend-paginator": "Zend Framework Paginator"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.13-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Fractal\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Phil Sturgeon",
+                    "email": "me@philsturgeon.uk",
+                    "homepage": "http://philsturgeon.uk/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Handle the output of complex data structures ready for API output.",
+            "homepage": "http://fractal.thephpleague.com/",
+            "keywords": [
+                "api",
+                "json",
+                "league",
+                "rest"
+            ],
+            "time": "2015-03-19 15:16:43"
+        },
+        {
+            "name": "maatwebsite/laravel-sidebar",
+            "version": "2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Maatwebsite/Laravel-Sidebar.git",
+                "reference": "f56514d82088905cad21d15a66eaefbfb62ba67f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Sidebar/zipball/f56514d82088905cad21d15a66eaefbfb62ba67f",
+                "reference": "f56514d82088905cad21d15a66eaefbfb62ba67f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/cache": "~5.0",
+                "illuminate/container": "~5.0",
+                "illuminate/contracts": "~5.0",
+                "illuminate/routing": "~5.0",
+                "illuminate/support": "~5.0",
+                "illuminate/view": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Maatwebsite\\Sidebar\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Maatwebsite.nl",
+                    "email": "patrick@maatwebsite.nl"
+                }
+            ],
+            "description": "A sidebar builder for Laravel",
+            "keywords": [
+                "acp",
+                "laravel",
+                "menu",
+                "sidebar"
+            ],
+            "time": "2015-07-11 10:40:43"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.17.2",
             "source": {
@@ -1230,6 +1766,56 @@
                 "schedule"
             ],
             "time": "2015-01-11 23:07:46"
+        },
+        {
+            "name": "namshi/jose",
+            "version": "5.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/namshi/jose.git",
+                "reference": "8c7eba486f74c014ea1d8faedafe5109a31ea95b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/namshi/jose/zipball/8c7eba486f74c014ea1d8faedafe5109a31ea95b",
+                "reference": "8c7eba486f74c014ea1d8faedafe5109a31ea95b",
+                "shasum": ""
+            },
+            "require": {
+                "lib-openssl": "*",
+                "php": ">=5.3.3",
+                "phpseclib/phpseclib": "~0.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Namshi\\JOSE": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alessandro Nadalin",
+                    "email": "alessandro.nadalin@gmail.com"
+                }
+            ],
+            "description": "JSON Object Signing and Encryption library for PHP.",
+            "keywords": [
+                "JSON Web Signature",
+                "JSON Web Token",
+                "JWS",
+                "json",
+                "jwt",
+                "token"
+            ],
+            "time": "2015-06-29 05:41:44"
         },
         {
             "name": "nesbot/carbon",
@@ -1378,6 +1964,153 @@
             "time": "2015-12-01 02:52:15"
         },
         {
+            "name": "phpdocumentor/reflection-docblock",
+            "version": "2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
+                "reference": "d68dbdc53dc358a816f00b300704702b2eaff7b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/d68dbdc53dc358a816f00b300704702b2eaff7b8",
+                "reference": "d68dbdc53dc358a816f00b300704702b2eaff7b8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "dflydev/markdown": "~1.0",
+                "erusev/parsedown": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "phpDocumentor": [
+                        "src/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike van Riel",
+                    "email": "mike.vanriel@naenius.com"
+                }
+            ],
+            "time": "2015-02-03 12:10:50"
+        },
+        {
+            "name": "phpseclib/phpseclib",
+            "version": "0.3.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpseclib/phpseclib.git",
+                "reference": "d15bba1edcc7c89e09cc74c5d961317a8b947bf4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/d15bba1edcc7c89e09cc74c5d961317a8b947bf4",
+                "reference": "d15bba1edcc7c89e09cc74c5d961317a8b947bf4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "require-dev": {
+                "phing/phing": "~2.7",
+                "phpunit/phpunit": "~4.0",
+                "sami/sami": "~2.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "suggest": {
+                "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
+                "ext-mcrypt": "Install the Mcrypt extension in order to speed up a wide variety of cryptographic operations.",
+                "pear-pear/PHP_Compat": "Install PHP_Compat to get phpseclib working on PHP < 4.3.3."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Crypt": "phpseclib/",
+                    "File": "phpseclib/",
+                    "Math": "phpseclib/",
+                    "Net": "phpseclib/",
+                    "System": "phpseclib/"
+                },
+                "files": [
+                    "phpseclib/Crypt/Random.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "phpseclib/"
+            ],
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jim Wigginton",
+                    "email": "terrafrost@php.net",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Patrick Monnerat",
+                    "email": "pm@datasphere.ch",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andreas Fischer",
+                    "email": "bantu@phpbb.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Hans-Jürgen Petrich",
+                    "email": "petrich@tronic-media.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
+            "homepage": "http://phpseclib.sourceforge.net",
+            "keywords": [
+                "BigInteger",
+                "aes",
+                "asn.1",
+                "asn1",
+                "blowfish",
+                "crypto",
+                "cryptography",
+                "encryption",
+                "rsa",
+                "security",
+                "sftp",
+                "signature",
+                "signing",
+                "ssh",
+                "twofish",
+                "x.509",
+                "x509"
+            ],
+            "time": "2015-01-28 21:50:33"
+        },
+        {
             "name": "pingpong/generators",
             "version": "v2.1.4",
             "source": {
@@ -1425,6 +2158,58 @@
                 "pingpong"
             ],
             "time": "2015-07-02 04:19:47"
+        },
+        {
+            "name": "pingpong/menus",
+            "version": "v2.1.5",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:pingpong-labs/menus.git",
+                "reference": "82ad5fa465a021f5fb39efde949cfc3a984cb57f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pingpong-labs/menus/zipball/82ad5fa465a021f5fb39efde949cfc3a984cb57f",
+                "reference": "82ad5fa465a021f5fb39efde949cfc3a984cb57f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "5.1.*",
+                "illuminate/support": "5.1.*",
+                "illuminate/view": "5.1.*",
+                "laravelcollective/html": "~5.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pingpong\\Menus\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Pingpong Labs",
+                    "email": "pingpong.labs@gmail.com"
+                }
+            ],
+            "description": "Laravel Menus",
+            "keywords": [
+                "bootstrap",
+                "laravel",
+                "menus",
+                "nav",
+                "navigation",
+                "pingpong"
+            ],
+            "time": "2015-07-17 19:03:00"
         },
         {
             "name": "pingpong/modules",
@@ -1518,6 +2303,66 @@
             ],
             "description": "Support Component of Pingpong Sky Package",
             "time": "2015-08-07 09:18:50"
+        },
+        {
+            "name": "prettus/l5-repository",
+            "version": "2.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andersao/l5-repository.git",
+                "reference": "52395432b6df51d0e7c3de281198ad86d2975c6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andersao/l5-repository/zipball/52395432b6df51d0e7c3de281198ad86d2975c6f",
+                "reference": "52395432b6df51d0e7c3de281198ad86d2975c6f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "~5.0|~5.1",
+                "illuminate/console": "~5.0|~5.1",
+                "illuminate/database": "~5.0|~5.1",
+                "illuminate/filesystem": "~5.0|~5.1",
+                "illuminate/http": "~5.0|~5.1",
+                "illuminate/pagination": "~5.0|~5.1",
+                "illuminate/support": "~5.0|~5.1",
+                "php": ">=5.4.0"
+            },
+            "suggest": {
+                "league/fractal": "Required to use the Fractal Presenter (0.12.*).",
+                "prettus/laravel-validation": "Required to use the Repository Validators (1.1.*)",
+                "robclancy/presenter": "Required to use the Presenter Model (1.3.*)"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Prettus\\Repository\\": "src/Prettus/Repository/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anderson Andrade",
+                    "email": "contato@andersonandra.de"
+                }
+            ],
+            "description": "Laravel 5 - Repositories to  the database layer",
+            "keywords": [
+                "cache",
+                "eloquent",
+                "laravel",
+                "model",
+                "repository"
+            ],
+            "time": "2015-09-11 11:26:57"
         },
         {
             "name": "psr/log",
@@ -1668,6 +2513,246 @@
                 }
             ],
             "time": "2015-12-05 22:14:53"
+        },
+        {
+            "name": "societycms/module-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocietyCMS/Core.git",
+                "reference": "836362f4916d2ca496197d33af89019ecac450c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocietyCMS/Core/zipball/836362f4916d2ca496197d33af89019ecac450c8",
+                "reference": "836362f4916d2ca496197d33af89019ecac450c8",
+                "shasum": ""
+            },
+            "require": {
+                "cartalyst/sentinel": "~2.0",
+                "dingo/api": "v0.10.0",
+                "floatingpoint/stylist": "~0.2",
+                "laracasts/flash": "~1.3",
+                "laracasts/presenter": "^0.2.1",
+                "laravelcollective/html": "5.1.*",
+                "maatwebsite/laravel-sidebar": "~2.0",
+                "prettus/l5-repository": "^2.1",
+                "societycms/installer": "dev-master",
+                "tymon/jwt-auth": "^0.5.5"
+            },
+            "type": "societycms-module",
+            "autoload": {
+                "psr-4": {
+                    "Modules\\Core\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Huwiler",
+                    "email": "ralph@huwiler.rocks"
+                }
+            ],
+            "description": "The SocietyCMS Core module.",
+            "keywords": [
+                "cms",
+                "societycms"
+            ],
+            "time": "2015-12-06 00:11:21"
+        },
+        {
+            "name": "societycms/module-dashboard",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocietyCMS/Dashboard.git",
+                "reference": "f5b5252fda0ba5f6e4df73753ac0eddcac3dc1cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocietyCMS/Dashboard/zipball/f5b5252fda0ba5f6e4df73753ac0eddcac3dc1cc",
+                "reference": "f5b5252fda0ba5f6e4df73753ac0eddcac3dc1cc",
+                "shasum": ""
+            },
+            "type": "societycms-module",
+            "autoload": {
+                "psr-4": {
+                    "Modules\\Dashboard\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Huwiler",
+                    "email": "ralph@huwiler.rocks"
+                }
+            ],
+            "description": "The SocietyCMS Dashboard module.",
+            "keywords": [
+                "cms",
+                "societycms"
+            ],
+            "time": "2015-12-06 11:53:37"
+        },
+        {
+            "name": "societycms/module-menu",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocietyCMS/Menu.git",
+                "reference": "2d772af40db2e08b83097c9a2a02bbfb3f18e235"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocietyCMS/Menu/zipball/2d772af40db2e08b83097c9a2a02bbfb3f18e235",
+                "reference": "2d772af40db2e08b83097c9a2a02bbfb3f18e235",
+                "shasum": ""
+            },
+            "require": {
+                "pingpong/menus": "^2.1"
+            },
+            "type": "societycms-module",
+            "autoload": {
+                "psr-4": {
+                    "Modules\\Menu\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Huwiler",
+                    "email": "ralph@huwiler.rocks"
+                }
+            ],
+            "description": "The SocietyCMS Menu module.",
+            "keywords": [
+                "cms",
+                "societycms"
+            ],
+            "time": "2015-12-06 12:05:06"
+        },
+        {
+            "name": "societycms/module-modules",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocietyCMS/Modules.git",
+                "reference": "c8b068f011f7cf0efdc4dd1ab0f0511b3be16435"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocietyCMS/Modules/zipball/c8b068f011f7cf0efdc4dd1ab0f0511b3be16435",
+                "reference": "c8b068f011f7cf0efdc4dd1ab0f0511b3be16435",
+                "shasum": ""
+            },
+            "type": "societycms-module",
+            "autoload": {
+                "psr-4": {
+                    "Modules\\Modules\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Huwiler",
+                    "email": "ralph@huwiler.rocks"
+                }
+            ],
+            "description": "The SocietyCMS Modules module.",
+            "keywords": [
+                "cms",
+                "societycms"
+            ],
+            "time": "2015-12-06 12:09:28"
+        },
+        {
+            "name": "societycms/module-setting",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocietyCMS/Setting.git",
+                "reference": "bc53d469b612d9d02614229487f1a6164170685a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocietyCMS/Setting/zipball/bc53d469b612d9d02614229487f1a6164170685a",
+                "reference": "bc53d469b612d9d02614229487f1a6164170685a",
+                "shasum": ""
+            },
+            "require": {
+                "floatingpoint/stylist": "^0.2"
+            },
+            "type": "societycms-module",
+            "autoload": {
+                "psr-4": {
+                    "Modules\\Setting\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Huwiler",
+                    "email": "ralph@huwiler.rocks"
+                }
+            ],
+            "description": "The SocietyCMS Setting module.",
+            "keywords": [
+                "cms",
+                "societycms"
+            ],
+            "time": "2015-12-06 12:31:32"
+        },
+        {
+            "name": "societycms/module-user",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocietyCMS/User.git",
+                "reference": "58c5ad3401c782d952a14656581e35a162d785c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocietyCMS/User/zipball/58c5ad3401c782d952a14656581e35a162d785c9",
+                "reference": "58c5ad3401c782d952a14656581e35a162d785c9",
+                "shasum": ""
+            },
+            "type": "societycms-module",
+            "autoload": {
+                "psr-4": {
+                    "Modules\\User\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Huwiler",
+                    "email": "ralph@huwiler.rocks"
+                }
+            ],
+            "description": "The SocietyCMS User module.",
+            "keywords": [
+                "cms",
+                "societycms"
+            ],
+            "time": "2015-12-06 12:13:28"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2545,6 +3630,69 @@
             "time": "2015-11-18 13:41:01"
         },
         {
+            "name": "tymon/jwt-auth",
+            "version": "0.5.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tymondesigns/jwt-auth.git",
+                "reference": "f70842d94a548f1457114dd57b6c0b9bf94ba13c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/f70842d94a548f1457114dd57b6c0b9bf94ba13c",
+                "reference": "f70842d94a548f1457114dd57b6c0b9bf94ba13c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "~5.0",
+                "illuminate/support": "~5.0",
+                "namshi/jose": "5.0.*",
+                "nesbot/carbon": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/auth": "~5.0",
+                "illuminate/console": "~5.0",
+                "illuminate/database": "~5.0",
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tymon\\JWTAuth\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sean Tymon",
+                    "email": "tymon148@gmail.com",
+                    "homepage": "http://tymondesigns.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "JSON Web Token Authentication for Laravel 4 and 5",
+            "homepage": "https://github.com/tymondesigns/jwt-auth",
+            "keywords": [
+                "Authentication",
+                "JSON Web Token",
+                "auth",
+                "jwt",
+                "laravel",
+                "tymon"
+            ],
+            "time": "2015-11-24 20:02:19"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v1.1.1",
             "source": {
@@ -2852,55 +4000,6 @@
                 "testing"
             ],
             "time": "2015-04-02 19:54:00"
-        },
-        {
-            "name": "phpdocumentor/reflection-docblock",
-            "version": "2.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "d68dbdc53dc358a816f00b300704702b2eaff7b8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/d68dbdc53dc358a816f00b300704702b2eaff7b8",
-                "reference": "d68dbdc53dc358a816f00b300704702b2eaff7b8",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "suggest": {
-                "dflydev/markdown": "~1.0",
-                "erusev/parsedown": "~1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "phpDocumentor": [
-                        "src/"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mike van Riel",
-                    "email": "mike.vanriel@naenius.com"
-                }
-            ],
-            "time": "2015-02-03 12:10:50"
         },
         {
             "name": "phpspec/php-diff",
@@ -3508,28 +4607,28 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "863df9687835c62aa423a22412d26fa2ebde3fd3"
+                "reference": "2b0112e42c338afa9ad9dfeb94d66f6d84c2f828"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/863df9687835c62aa423a22412d26fa2ebde3fd3",
-                "reference": "863df9687835c62aa423a22412d26fa2ebde3fd3",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/2b0112e42c338afa9ad9dfeb94d66f6d84c2f828",
+                "reference": "2b0112e42c338afa9ad9dfeb94d66f6d84c2f828",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.2"
+                "phpunit/phpunit": "~5"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -3552,11 +4651,11 @@
                 }
             ],
             "description": "Diff implementation",
-            "homepage": "http://www.github.com/sebastianbergmann/diff",
+            "homepage": "https://github.com/sebastianbergmann/diff",
             "keywords": [
                 "diff"
             ],
-            "time": "2015-02-22 15:13:53"
+            "time": "2015-12-06 07:21:36"
         },
         {
             "name": "sebastian/environment",
@@ -3866,7 +4965,13 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "societycms/installer": 20
+        "societycms/installer": 20,
+        "societycms/module-core": 20,
+        "societycms/module-dashboard": 20,
+        "societycms/module-menu": 20,
+        "societycms/module-modules": 20,
+        "societycms/module-setting": 20,
+        "societycms/module-user": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
