@@ -16,7 +16,12 @@
         "laravel/framework": "5.1.*",
         "pingpong/modules": "~2.0",
         "societycms/installer": "dev-master",
-        "societycms/module-core": "dev-master"
+        "societycms/module-core": "dev-master",
+        "societycms/module-dashboard": "dev-master",
+        "societycms/module-menu": "dev-master",
+        "societycms/module-modules": "dev-master",
+        "societycms/module-setting": "dev-master",
+        "societycms/module-user": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
