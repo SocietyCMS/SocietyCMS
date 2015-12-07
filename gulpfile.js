@@ -1,6 +1,19 @@
 var gulp = require("gulp");
 var elixir = require('laravel-elixir');
 
+var Task = elixir.Task;
+
+elixir.extend("stylistPublish", function() {
+
+    new Task("stylistPublish", function() {
+        gulp.src('').pipe(shell('php artisan stylist:publish'));
+    })
+
+        .watch('themes/**/*.less')
+        .watch('themes/**/*.js');
+});
+
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -15,6 +28,8 @@ var elixir = require('laravel-elixir');
 elixir.config.cssOutput = 'public/themes';
 
 elixir(function (mix) {
+
+    mix.stylistPublish();
 
     mix.browserSync({
         proxy: "societycms.dev",
