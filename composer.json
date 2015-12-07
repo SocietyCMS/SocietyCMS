@@ -21,7 +21,9 @@
         "societycms/module-menu": "dev-master",
         "societycms/module-modules": "dev-master",
         "societycms/module-setting": "dev-master",
-        "societycms/module-user": "dev-master"
+        "societycms/module-user": "dev-master",
+        "societycms/theme-societyadmin": "dev-master",
+        "societycms/theme-flatly": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
