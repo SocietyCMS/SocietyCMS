@@ -46,15 +46,19 @@
     "scripts": {
         "post-install-cmd": [
             "php artisan clear-compiled",
+            "php artisan stylist:publish",
+            "php artisan module:publish",
             "php artisan optimize"
         ],
         "pre-update-cmd": [
             "php artisan clear-compiled"
         ],
         "post-update-cmd": [
-            "php artisan optimize",
+            "php artisan clear-compiled",
+            "php artisan stylist:publish",
             "php artisan module:publish",
-            "php artisan stylist:publish"
+            "php artisan module:migrate",
+            "php artisan optimize"
         ],
         "post-root-package-install": [
             "php -r \"copy('.env.example', '.env');\""
