@@ -53,7 +53,8 @@
         ],
         "post-update-cmd": [
             "php artisan optimize",
-            "php artisan module:publish"
+            "php artisan module:publish",
+            "php artisan stylist:publish"
         ],
         "post-root-package-install": [
             "php -r \"copy('.env.example', '.env');\""
