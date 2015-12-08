@@ -1,5 +1,6 @@
 var gulp = require("gulp");
 var elixir = require('laravel-elixir');
+var shell = require("gulp-shell");
 
 var Task = elixir.Task;
 
