@@ -4,9 +4,9 @@ var shell = require("gulp-shell");
 
 var Task = elixir.Task;
 
-elixir.extend("stylistPublish", function() {
+elixir.extend("style", function() {
 
-    new Task("stylistPublish", function() {
+    new Task("style", function() {
         gulp.src('').pipe(shell('php artisan stylist:publish'));
     })
 
@@ -33,7 +33,7 @@ elixir(function (mix) {
 
     mix.phpUnit();
 
-    mix.stylistPublish();
+    mix.style();
 
     mix.browserSync({
         proxy: "societycms.dev",
