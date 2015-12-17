@@ -27,8 +27,11 @@ elixir.extend("stylistPublish", function() {
  */
 
 elixir.config.cssOutput = 'public/themes';
+elixir.config.testing.phpUnit.path = 'modules/*/Tests'
 
 elixir(function (mix) {
+
+    mix.phpUnit();
 
     mix.stylistPublish();
 
