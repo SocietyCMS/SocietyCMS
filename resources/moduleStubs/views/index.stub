@@ -1,11 +1,19 @@
 @extends('layouts.master')
 
-@section('content')
-	
-	<h1>Hello World</h1>
-	
-	<p>
-		This view is loaded from module: {!! config('$LOWER_NAME$.name') !!}
-	</p>
+@section('title')
+     {!! config('$LOWER_NAME$.name') !!}
+@endsection
+@section('subTitle')
+    Hello World
+@endsection
 
-@stop
+@section('content')
+
+    <div class="ui message">
+      <div class="header">
+        Example
+      </div>
+      <p>This view is loaded from module: {!! config('$LOWER_NAME$.name') !!}</p>
+    </div>
+
+@endsection
