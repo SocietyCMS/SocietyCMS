@@ -1,8 +1,8 @@
-<?php namespace $MODULE_NAMESPACE$\$MODULE$\Providers;
+<?php namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Providers;
 
 use Modules\Core\Providers\RoutingServiceProvider as CoreRoutingServiceProvider;
 
-class $NAME$ extends CoreRoutingServiceProvider {
+class RouteServiceProvider extends CoreRoutingServiceProvider {
     
     /**
          * The root namespace to assume when generating URLs to actions.
@@ -15,7 +15,7 @@ class $NAME$ extends CoreRoutingServiceProvider {
          */
         protected function getFrontendRoute()
         {
-            return false;
+            return __DIR__ . '/../Http/frontendRoutes.php';
         }
 
         /**
