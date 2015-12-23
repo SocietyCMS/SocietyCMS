@@ -10,8 +10,8 @@ elixir.extend("style", function() {
         gulp.src('').pipe(shell('php artisan stylist:publish'));
     })
 
-        .watch('themes/**/*.less')
-        .watch('themes/**/*.js');
+   //     .watch('themes/**/*.less')
+   //     .watch('themes/**/*.js');
 });
 
 
