@@ -1,19 +1,19 @@
 var gulp = require("gulp");
+var shell = require('gulp-shell');
 var elixir = require('laravel-elixir');
-var shell = require("gulp-shell");
+var moduleInfo = require('./module.json');
 
 var Task = elixir.Task;
 
-elixir.extend("style", function() {
+elixir.extend("PublishModules", function () {
 
-    new Task("style", function() {
-        gulp.src('').pipe(shell('php artisan stylist:publish'));
+    new Task("PublishModules", function () {
+        gulp.src('').pipe(shell('php ../../artisan module:publish ' + moduleInfo.name));
     })
 
-   //     .watch('themes/**/*.less')
-   //     .watch('themes/**/*.js');
+        .watch('**/*.less')
+        .watch('**/*.js');
 });
-
 
 /*
  |--------------------------------------------------------------------------
@@ -26,18 +26,10 @@ elixir.extend("style", function() {
  |
  */
 
-elixir.config.cssOutput = 'public/themes';
-elixir.config.testing.phpUnit.path = 'modules/*/Tests'
-
 elixir(function (mix) {
+    mix.less(moduleInfo.name + ".less");
 
-    mix.phpUnit();
+    mix.copy('Resources/assets/images', 'Assets/images');
 
-    mix.style();
-/*
-    mix.browserSync({
-        proxy: "societycms.dev",
-        port:   8080
-    });
-*/
+    mix.PublishModules();
 });
