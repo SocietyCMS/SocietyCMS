@@ -18,7 +18,7 @@ return [
     |
     */
 
-    'standardsTree' => env('API_STANDARDS_TREE', 'x'),
+    'standardsTree' => 'vnd',
 
     /*
     |--------------------------------------------------------------------------
@@ -32,7 +32,7 @@ return [
     |
     */
 
-    'subtype' => env('API_SUBTYPE', ''),
+    'subtype' => 'societycms',
 
     /*
     |--------------------------------------------------------------------------
@@ -57,7 +57,7 @@ return [
     |
     */
 
-    'prefix' => env('API_PREFIX', null),
+    'prefix' => 'api',
 
     /*
     |--------------------------------------------------------------------------
@@ -69,7 +69,7 @@ return [
     |
     */
 
-    'domain' => env('API_DOMAIN', null),
+    'domain' => null,
 
     /*
     |--------------------------------------------------------------------------
@@ -82,7 +82,7 @@ return [
     |
     */
 
-    'name' => env('API_NAME', null),
+    'name' => 'SocietyCMS API',
 
     /*
     |--------------------------------------------------------------------------
@@ -185,7 +185,7 @@ return [
     |
     */
 
-    'transformer' => env('API_TRANSFORMER', 'Dingo\Api\Transformer\Adapter\Fractal'),
+    'transformer' => 'Dingo\Api\Transformer\Adapter\Fractal',
 
     /*
     |--------------------------------------------------------------------------
@@ -198,7 +198,7 @@ return [
     |
     */
 
-    'defaultFormat' => env('API_DEFAULT_FORMAT', 'json'),
+    'defaultFormat' => 'json',
 
     'formats' => [
 
