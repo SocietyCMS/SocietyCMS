@@ -3,4 +3,3 @@
 /node_modules
 Homestead.yaml
 .env
-composer.lock
