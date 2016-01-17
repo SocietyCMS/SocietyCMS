@@ -18,9 +18,6 @@ class Kernel extends HttpKernel
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
 
-        \Maatwebsite\Sidebar\Middleware\ResolveSidebars::class,
-        \SocietyCMS\Http\Middleware\VerifyCsrfToken::class,
-
         \Clockwork\Support\Laravel\ClockworkMiddleware::class
     ];
 
