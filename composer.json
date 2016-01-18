@@ -26,7 +26,7 @@
         "societycms/theme-flatly": "dev-master"
     },
     "require-dev": {
-        "itsgoingd/clockwork": "~1.10",
+        "itsgoingd/clockwork": "dev-master",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~4.0",
@@ -44,7 +44,28 @@
         ]
     },
     "scripts": {
-
+        "post-install-cmd": [
+            "php artisan clear-compiled",
+            "php artisan stylist:publish",
+            "php artisan module:publish",
+            "php artisan optimize"
+        ],
+        "pre-update-cmd": [
+            "php artisan clear-compiled"
+        ],
+        "post-update-cmd": [
+            "php artisan clear-compiled",
+            "php artisan stylist:publish",
+            "php artisan module:publish",
+            "php artisan module:migrate",
+            "php artisan optimize"
+        ],
+        "post-root-package-install": [
+            "php -r \"copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ]
     },
     "config": {
         "preferred-install": "dist"
