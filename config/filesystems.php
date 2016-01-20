@@ -85,6 +85,11 @@ return [
             'root'   => public_path().'/media',
         ],
 
+        'storage' => [
+            'driver' => 'local',
+            'root'   => storage_path(),
+        ],
+
     ],
 
 ];
