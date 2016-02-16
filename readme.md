@@ -24,7 +24,7 @@ First update your .env with your Database settings. Memcache or Redis is require
 Migrate your database:
 ```
 php artisan module:migrate
-php artisan module:seed      #optional, for demo data
+php artisan module:seed                               #optional, for demo data
 ```
 To complete the installation create the following file: storage/installed.
 
@@ -35,8 +35,8 @@ Optionally you can install a few 1st-party content modules:
 ```
 composer require societycms/module-blog:dev-master
 composer require societycms/module-documents:dev-master
-composer require societycms/module-gallery-blog:dev-master
-composer require societycms/module-page-blog:dev-master
+composer require societycms/module-gallery:dev-master
+composer require societycms/module-page:dev-master
 
-php artisan module:seed      #optional, for demo data
+php artisan module:seed                                 #optional, for demo data
 ```
