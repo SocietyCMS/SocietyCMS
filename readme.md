@@ -17,7 +17,7 @@ The only CMS designed for you and your society.
 ## Installation
 
 ```
-	composer create-project societycms/societycms dev-master
+	composer create-project societycms/societycms:dev-master
 ```
 
 Follow the [Laravel](https://laravel.com/docs/5.1) Instructions for basic configuration.
