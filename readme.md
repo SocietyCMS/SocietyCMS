@@ -24,6 +24,7 @@ First update your .env with your Database settings. Memcache or Redis is require
 Migrate your database:
 ```
 php artisan module:migrate
+php artisan module:seed      #optional, for demo data
 ```
 To complete the installation create the following file: storage/installed.
 
