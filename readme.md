@@ -1,7 +1,7 @@
 # SocietyCMS
 The only CMS designed for you and your society.
 
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+[![License](https://poser.pugx.org/SocietyCMS/SocietyCMS/license.svg)](https://packagist.org/packages/SocietyCMS/SocietyCMS)
 
 
 - [Introduction](#introduction)
