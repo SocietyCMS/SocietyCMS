@@ -16,13 +16,13 @@ The only CMS designed for you and your society.
 <a name="installation"></a>
 ## Installation
 
-```
+```bash
 composer create-project societycms/societycms:dev-master --prefer-source
 ```
 
 First update your .env with your Database settings. Memcache or Redis is required for caching!
 Migrate your database:
-```
+```bash
 php artisan module:migrate
 php artisan module:seed                               #optional, for demo data
 ```
@@ -32,7 +32,7 @@ Follow the [Laravel](https://laravel.com/docs/5.1) Instructions for basic config
 
 ### Modules
 Optionally you can install a few 1st-party content modules:
-```
+```bash
 composer require societycms/module-blog:dev-master
 composer require societycms/module-documents:dev-master
 composer require societycms/module-gallery:dev-master
