@@ -23,7 +23,7 @@
         "societycms/module-setting": "dev-master",
         "societycms/module-user": "dev-master",
         "societycms/theme-societyadmin": "dev-master",
-        "societycms/theme-flatly": "dev-master"
+        "societycms/theme-societystarter": "dev-master"
     },
     "require-dev": {
         "itsgoingd/clockwork": "dev-master",
