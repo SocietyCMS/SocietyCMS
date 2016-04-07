@@ -26,7 +26,6 @@
         "societycms/theme-societystarter": "dev-master"
     },
     "require-dev": {
-        "itsgoingd/clockwork": "dev-master",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~4.0",
