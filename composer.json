@@ -15,8 +15,8 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.1.*",
-        "pingpong/modules": "~2.0",
+        "laravel/framework": "^5.1.34",
+        "pingpong/modules": "~2.1",
         "societycms/installer": "dev-master",
         "societycms/module-core": "dev-master",
         "societycms/module-dashboard": "dev-master",
