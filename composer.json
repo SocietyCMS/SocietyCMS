@@ -1,9 +1,11 @@
 {
     "name": "societycms/societycms",
     "description": "The SocietyCMS application.",
-    "keywords": ["cms", "societycms"],
-    "license": "AGPL",
-    "version": "0.0.0",
+    "keywords": [
+        "societycms"
+    ],
+    "license": "MIT",
+    "version": "0.0.1",
     "type": "project",
     "authors": [
         {
