@@ -7,7 +7,7 @@ php:
 
 before_install:
   - composer self-update
-  - composer create-project societycms/societycms
+  - composer create-project societycms/societycms:dev-master
   - cd ./societycms
   - touch ./storage/database.sqlite
   - export APP_ENV="testing"
