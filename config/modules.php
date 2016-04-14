@@ -24,29 +24,29 @@ return [
 
     'stubs' => [
         'enabled' => true,
-        'path' => base_path().'/resources/moduleStubs',
-        'files' => [
-            'start' => 'start.php',
-            'routes/backendRoutes' => 'Http/backendRoutes.php',
-            'routes/frontendRoutes' => 'Http/frontendRoutes.php',
-            'provider/route-provider' => 'Providers/RouteServiceProvider.php',
+        'path'    => base_path().'/resources/moduleStubs',
+        'files'   => [
+            'start'                     => 'start.php',
+            'routes/backendRoutes'      => 'Http/backendRoutes.php',
+            'routes/frontendRoutes'     => 'Http/frontendRoutes.php',
+            'provider/route-provider'   => 'Providers/RouteServiceProvider.php',
             'provider/sidebar-extender' => 'MenuExtenders/SidebarExtender.php',
-            'json' => 'module.json',
-            'views/index' => 'Resources/views/backend/index.blade.php',
-            'scaffold/config' => 'Config/config.php',
-            'composer' => 'composer.json',
+            'json'                      => 'module.json',
+            'views/index'               => 'Resources/views/backend/index.blade.php',
+            'scaffold/config'           => 'Config/config.php',
+            'composer'                  => 'composer.json',
         ],
         'replacements' => [
-            'start' => ['LOWER_NAME'],
-            'routes/backendRoutes' => ['LOWER_NAME', 'STUDLY_NAME'],
-            'routes/frontendRoutes' => ['LOWER_NAME', 'STUDLY_NAME'],
-            'provider/route-provider' => ['STUDLY_NAME', 'MODULE_NAMESPACE'],
+            'start'                     => ['LOWER_NAME'],
+            'routes/backendRoutes'      => ['LOWER_NAME', 'STUDLY_NAME'],
+            'routes/frontendRoutes'     => ['LOWER_NAME', 'STUDLY_NAME'],
+            'provider/route-provider'   => ['STUDLY_NAME', 'MODULE_NAMESPACE'],
             'provider/sidebar-extender' => ['STUDLY_NAME', 'MODULE_NAMESPACE'],
-            'json' => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE'],
-            'views/index' => ['LOWER_NAME'],
-            'views/master' => ['STUDLY_NAME'],
-            'scaffold/config' => ['STUDLY_NAME'],
-            'composer' => [
+            'json'                      => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE'],
+            'views/index'               => ['LOWER_NAME'],
+            'views/master'              => ['STUDLY_NAME'],
+            'scaffold/config'           => ['STUDLY_NAME'],
+            'composer'                  => [
                 'LOWER_NAME',
                 'STUDLY_NAME',
                 'VENDOR',
@@ -99,22 +99,22 @@ return [
         */
 
         'generator' => [
-            'assets' => 'Assets',
-            'config' => 'Config',
-            'command' => 'Console',
-            'migration' => 'Database/Migrations',
-            'model' => 'Entities',
+            'assets'       => 'Assets',
+            'config'       => 'Config',
+            'command'      => 'Console',
+            'migration'    => 'Database/Migrations',
+            'model'        => 'Entities',
             'menuExtender' => 'MenuExtenders',
-            'repository' => 'Repositories',
-            'seeder' => 'Database/Seeders',
-            'controller' => 'Http/Controllers',
-            'backend' => 'Http/Controllers/backend',
-            'filter' => 'Http/Middleware',
-            'request' => 'Http/Requests',
-            'provider' => 'Providers',
-            'lang' => 'Resources/lang',
-            'views' => 'Resources/views',
-            'test' => 'Tests',
+            'repository'   => 'Repositories',
+            'seeder'       => 'Database/Seeders',
+            'controller'   => 'Http/Controllers',
+            'backend'      => 'Http/Controllers/backend',
+            'filter'       => 'Http/Middleware',
+            'request'      => 'Http/Requests',
+            'provider'     => 'Providers',
+            'lang'         => 'Resources/lang',
+            'views'        => 'Resources/views',
+            'test'         => 'Tests',
         ],
     ],
     /*
@@ -129,7 +129,7 @@ return [
 
     'scan' => [
         'enabled' => false,
-        'paths' => [
+        'paths'   => [
             base_path('vendor/*/*'),
         ],
     ],
@@ -146,7 +146,7 @@ return [
     'composer' => [
         'vendor' => 'pingpong-modules',
         'author' => [
-            'name' => 'Pingpong Labs',
+            'name'  => 'Pingpong Labs',
             'email' => 'pingpong.labs@gmail.com',
         ],
     ],
@@ -159,8 +159,8 @@ return [
     |
     */
     'cache' => [
-        'enabled' => false,
-        'key' => 'pingpong-modules',
+        'enabled'  => false,
+        'key'      => 'pingpong-modules',
         'lifetime' => 60,
     ],
 
