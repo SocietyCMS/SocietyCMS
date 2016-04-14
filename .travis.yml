@@ -30,6 +30,12 @@ install:
   - if [[ $setup = 'lowest' ]]; then travis_retry composer update --prefer-dist --no-interaction --prefer-lowest --prefer-stable; fi
 
 before_script:
-  - php artisan society:install --no-interaction --force -v
+  - cp .env.example .env
+  - php artisan key:generate
+  - php artisan api:key-generate
+  - php artisan module:publish
+  - php artisan stylist:publish
+  - touch ./storage/app/installed
+
 
 script: vendor/bin/phpunit
