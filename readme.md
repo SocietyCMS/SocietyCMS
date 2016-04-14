@@ -1,8 +1,7 @@
 # SocietyCMS
 The only CMS designed for you and your society.
 
-[![License](https://poser.pugx.org/SocietyCMS/SocietyCMS/license.svg)](https://packagist.org/packages/SocietyCMS/SocietyCMS)
-
+[![Latest Stable Version](https://poser.pugx.org/societycms/societycms/v/stable)](https://packagist.org/packages/societycms/societycms) [![Total Downloads](https://poser.pugx.org/societycms/societycms/downloads)](https://packagist.org/packages/societycms/societycms) [![Latest Unstable Version](https://poser.pugx.org/societycms/societycms/v/unstable)](https://packagist.org/packages/societycms/societycms) [![License](https://poser.pugx.org/societycms/societycms/license)](https://packagist.org/packages/societycms/societycms)
 
 - [Introduction](#introduction)
 - [Installation](#installation)
@@ -19,16 +18,18 @@ The only CMS designed for you and your society.
 ```bash
 composer create-project societycms/societycms:dev-master --prefer-source
 ```
-
-First update your .env with your Database settings. Memcache or Redis is required for caching!
-Migrate your database:
+After the installation has finished, change into your project directory and run the install command:
 ```bash
-php artisan module:migrate
-php artisan module:seed                               #optional, for demo data
+php artisan society:install
 ```
-To complete the installation create the following file: storage/installed.
 
-Follow the [Laravel](https://laravel.com/docs/5.1) Instructions for basic configuration.
+This will perform the following cations:
+
+* Setup database information
+* Running migrations
+* Running seeds
+* Publishing assets
+* Create a first admin account
 
 ### Modules
 Optionally you can install a few 1st-party content modules:
@@ -37,6 +38,10 @@ composer require societycms/module-blog:dev-master
 composer require societycms/module-documents:dev-master
 composer require societycms/module-gallery:dev-master
 composer require societycms/module-page:dev-master
+```
 
-php artisan module:seed                                 #optional, for demo data
+### Demo Mode
+To fill the Database with Demo data, run the following command:
+```bash
+php artisan society:demo
 ```
