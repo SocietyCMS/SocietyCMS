@@ -1,7 +1,7 @@
 # SocietyCMS
 The only CMS designed for you and your society.
 
-[![Latest Stable Version](https://poser.pugx.org/societycms/societycms/v/stable)](https://packagist.org/packages/societycms/societycms) [![Total Downloads](https://poser.pugx.org/societycms/societycms/downloads)](https://packagist.org/packages/societycms/societycms) [![Latest Unstable Version](https://poser.pugx.org/societycms/societycms/v/unstable)](https://packagist.org/packages/societycms/societycms) [![License](https://poser.pugx.org/societycms/societycms/license)](https://packagist.org/packages/societycms/societycms)
+[![Build Status](https://travis-ci.org/SocietyCMS/SocietyCMS.svg?branch=master)](https://travis-ci.org/SocietyCMS/SocietyCMS) [![Latest Stable Version](https://poser.pugx.org/societycms/societycms/v/stable)](https://packagist.org/packages/societycms/societycms) [![Total Downloads](https://poser.pugx.org/societycms/societycms/downloads)](https://packagist.org/packages/societycms/societycms) [![Latest Unstable Version](https://poser.pugx.org/societycms/societycms/v/unstable)](https://packagist.org/packages/societycms/societycms) [![License](https://poser.pugx.org/societycms/societycms/license)](https://packagist.org/packages/societycms/societycms)
 
 - [Introduction](#introduction)
 - [Installation](#installation)
