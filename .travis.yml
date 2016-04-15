@@ -14,8 +14,6 @@ env:
 matrix:
   include:
     - php: 5.5.9
-      env: setup=lowest
-    - php: 5.5.9
       env: setup=stable
 
 sudo: false
@@ -27,7 +25,6 @@ before_install:
 install:
   - if [[ $setup = 'basic' ]]; then travis_retry composer install --no-interaction --prefer-dist; fi
   - if [[ $setup = 'stable' ]]; then travis_retry composer update --prefer-dist --no-interaction --prefer-stable; fi
-  - if [[ $setup = 'lowest' ]]; then travis_retry composer update --prefer-dist --no-interaction --prefer-lowest --prefer-stable; fi
 
 before_script:
   - cp .env.example .env
